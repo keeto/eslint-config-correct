@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-correct",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "es5.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/correct/eslint-config-keeto.git"
+    "url": "git+https://github.com/keeto/eslint-config-correct.git"
   },
   "keywords": [
     "eslint"
@@ -16,10 +16,10 @@
   "author": "Mark \"Keeto\" Obcena <markeeto@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/correct/eslint-config-correct/issues"
+    "url": "https://github.com/keeto/eslint-config-correct/issues"
   },
   "peerDependencies": {
     "eslint": "5.x"
   },
-  "homepage": "https://github.com/correct/eslint-config-correct#readme"
+  "homepage": "https://github.com/keeto/eslint-config-correct#readme"
 }
