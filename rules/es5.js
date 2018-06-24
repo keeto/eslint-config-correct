@@ -6,6 +6,8 @@ module.exports = {
   'rules': {
     // Enforces getter/setter pairs in objects
     'accessor-pairs': 'off',
+    // Ensure array method callbacks return a value.
+    'array-callback-return': 'error',
     // treat var statements as if they were block scoped
     'block-scoped-var': 'error',
     // specify the maximum cyclomatic complexity allowed in a program
@@ -22,6 +24,10 @@ module.exports = {
     'dot-location': ['error', 'property'],
     // require the use of === and !==
     'eqeqeq': 'error',
+    // ensure for-loop conditions are sane
+    'for-direction': 'error',
+    // ensure getters have a return value
+    'getter-return': 'error',
     // make sure for-in loops have an if statement
     'guard-for-in': 'error',
     // disallow the use of alert, confirm, and prompt
@@ -95,6 +101,8 @@ module.exports = {
     'no-sequences': 'error',
     // restrict what can be thrown as an exception
     'no-throw-literal': 'error',
+    // disallow unmodified conditions of loops
+    'no-unmodified-loop-condition': 'error',
     // disallow usage of expressions in statement position
     'no-unused-expressions': 'error',
     // disallow unnecessary .call() and .apply()
@@ -161,6 +169,8 @@ module.exports = {
     'no-sparse-arrays': 'error',
     // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unreachable': 'error',
+    // ensure negations are correct
+    'no-unsafe-negation': 'error',
     // disallow comparisons with the value NaN
     'use-isnan': 'error',
     // ensure JSDoc comments are valid
@@ -192,6 +202,8 @@ module.exports = {
     'valid-typeof': 'error',
     // Avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': 'off',
+    // Ensure promises reject with errors.
+    'prefer-promise-reject-errors': 'error',
     // enforce return after a callback
     'callback-return': 'off',
     // enforces error handling in callbacks (node environment)
@@ -221,7 +233,7 @@ module.exports = {
     // disallow use of unary operators, ++ and --
     'no-plusplus': 'off',
      // controls location of Use Strict Directives
-    'strict': ['off', 'never'],
+    'strict': ['error', 'safe'],
     // enforce spacing inside array brackets
     'array-bracket-spacing': 'off',
     // enforce one true brace style
@@ -242,6 +254,8 @@ module.exports = {
     'func-names': 'off',
     // enforces use of function declarations or expressions
     'func-style': 'off',
+    // enforce consistent line breaks inside function parentheses 
+    'function-paren-newline': ['error', 'multiline'],
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     'id-length': 'off',
     // this option sets a specific tab width for your code
@@ -256,10 +270,12 @@ module.exports = {
     'linebreak-style': 'off',
     // specify the maximum depth callbacks can be nested
     'max-nested-callbacks': 'off',
+    // enforce or disallow newlines between operands of ternary expressions
+    'multiline-ternary': ['error', 'always-multiline'],
     // require a capital letter for constructors
     'new-cap': ['error', {'newIsCap': true}],
     // disallow the omission of parentheses when invoking a constructor with no arguments
-    'new-parens': 'off',
+    'new-parens': 'error',
     // allow/disallow an empty newline after var statement
     'newline-after-var': 'off',
     // disallow use of the Array constructor
@@ -269,7 +285,7 @@ module.exports = {
     // disallow comments inline after code
     'no-inline-comments': 'off',
     // disallow if as the only statement in an else block
-    'no-lonely-if': 'off',
+    'no-lonely-if': 'error',
     // disallow mixed spaces and tabs for indentation
     'no-mixed-spaces-and-tabs': 'error',
     // disallow multiple empty lines and only one newline at the end

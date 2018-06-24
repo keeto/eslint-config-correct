@@ -22,8 +22,12 @@ module.exports = {
     'no-class-assign': 'off',
     // disallow modifying variables that are declared using const
     'no-const-assign': 'error',
+    // disallow empty patterns
+    'no-empty-pattern': 'error',
     // disallow to use this/super before super() calling in constructors.
     'no-this-before-super': 'error',
+    // disallow unnecessary await in returns
+    'no-return-await': 'error',
     // require let or const instead of var
     'no-var': 'error',
     // require method and property shorthand syntax for object literals
@@ -37,7 +41,9 @@ module.exports = {
     // suggest using template strings instead of concatenation or joining
     'prefer-template': 'error',
     // disallow generator functions that do not have yield
-    'require-yield': 'error'
+    'require-yield': 'error',
+    // disallow async functions which have no await expression
+    'require-await': 'error'
     // disallow trailing commas in object literals
     //'comma-dangle': ['error', 'always-multiline']
   }
