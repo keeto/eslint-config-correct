@@ -1,6 +1,6 @@
 module.exports = {
   'extends': [
-    'eslint-config-keeto/rules/es5'
+    'eslint-config-correct/rules/es5'
   ],
   'rules': {}
 };
