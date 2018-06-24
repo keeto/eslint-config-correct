@@ -1,0 +1,25 @@
+{
+  "name": "eslint-config-correct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "es5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/correct/eslint-config-keeto.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Mark \"Keeto\" Obcena <markeeto@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/correct/eslint-config-correct/issues"
+  },
+  "peerDependencies": {
+    "eslint": "5.x"
+  },
+  "homepage": "https://github.com/correct/eslint-config-correct#readme"
+}
