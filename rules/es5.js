@@ -255,7 +255,7 @@ module.exports = {
     // enforces use of function declarations or expressions
     'func-style': 'off',
     // enforce consistent line breaks inside function parentheses 
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['error', 'consistent'],
     // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     'id-length': 'off',
     // this option sets a specific tab width for your code
